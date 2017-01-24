@@ -7,17 +7,9 @@
     "start": "webpack-dev-server -d --watch",
     "test": "mocha -w --compilers js:babel-core/register --require helpers/test-setup.js app/**/*.spec.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pescel/walker-texas-rangerBox.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pescel/walker-texas-rangerBox/issues"
-  },
-  "homepage": "https://github.com/pescel/walker-texas-rangerBox#readme",
   "devDependencies": {
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",

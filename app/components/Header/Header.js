@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="header-container">
     <Button />
-      <h1 className="main-header">Chuck Norris Joke Machine</h1>
+      <h1 className="header">Chuck Norris Joke Machine</h1>
     </div>
   );
 }

@@ -21,10 +21,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', '.json', '.jsx', '.css', '.scss']
+  },
+  externals: {
+    'cheerio': 'window',
+    'react/lib/ExecutionEnvironment': true,
+    'react/lib/ReactContext': true
   }
-},
-externals: {
-  'cheerio': 'window',
-  'react/lib/ExecutionEnvironment': true,
-  'react/lib/ReactContext': true,
-},
+}
