@@ -2,7 +2,6 @@ import React from 'react';
 import NewJokeButton from '../Button/NewJokeButton';
 
 const Input = (props) => {
-  console.log("jjjj");
   return (
     <div className='input-container'>
       <NewJokeButton getNewJokes={props.getNewJokes} />
