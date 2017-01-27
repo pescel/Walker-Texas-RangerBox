@@ -9,6 +9,9 @@ const JokeCards = (props) => {
     <div className="new-joke-container">
       {props.jokes.map((joke, index) => {
         let isFavorite = props.favorites.includes(joke)
+        if (props.name) {
+          joke.joke = joke.joke.replace(/Chuck Norris/g, props.name)
+        }
         return (
           <div className="joke-card" key={joke.id}>
             <p>{joke.joke}</p>

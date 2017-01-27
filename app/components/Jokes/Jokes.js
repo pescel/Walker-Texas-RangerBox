@@ -17,11 +17,8 @@ export default class Jokes extends Component {
   getNewJokes(){
     const jokeAPI = `http://api.icndb.com/jokes/random/${this.state.jokeNum}?escape=javascript`
     fetch(jokeAPI)
-          .then((response)=>{
-              return response.json()})
-          .then((data)=> {
-      this.setState({ jokes: data.value })
-    })
+    .then((response)=>{ return response.json() })
+    .then((data)=>{ this.setState({ jokes: data.value }) })
   }
 
   handleChange(e) {
@@ -42,6 +39,7 @@ export default class Jokes extends Component {
         <JokeCards jokes={this.state.jokes}
                    addFavorite={this.addFavorite.bind(this)}
                    favorites={this.state.favorites}
+                   name={this.props.name}
         />
       </div>
 

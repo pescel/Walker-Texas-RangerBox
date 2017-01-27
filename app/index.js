@@ -13,7 +13,7 @@ const router = (
       <IndexRoute component={Jokes} />
       <Route path='/jokes' component={Jokes} />
       <Route path='/settings' component={Settings} />
-      <Route path='/favorites' component={Favorites}/>
+      <Route path='/favorites' component={Favorites} />
     </Route>
   </Router>
 );

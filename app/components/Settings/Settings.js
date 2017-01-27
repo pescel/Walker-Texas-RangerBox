@@ -3,8 +3,8 @@ import { Link } from 'react-dom';
 import './settings-style';
 
 export default class Settings extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       name: '',
     }
@@ -17,10 +17,15 @@ export default class Settings extends Component {
           <p className='set-name'>Set Name: </p>
           <input id='name-input'
                  value={this.state.name}
-                 handleChange={(e) => {this.setState({ name: e.target.value })}}
+                 onChange={(e) => {this.setState({ name: e.target.value })}}
           />
-          <button className='set-name-button'>SET </button>
-          <button className='reset-name-button'>RESET </button>
+          <button className='set-name-button'
+                  disabled={!this.state.name}
+                  onClick={() => this.props.changeName(this.state.name)}
+                  >SET </button>
+          <button className='reset-name-button'
+                  onClick={() => this.props.changeName("")}
+          >RESET </button>
         </div>
         <div className='parental-control-container'>
           <p className='parent-controls'>Parental Control: </p>
