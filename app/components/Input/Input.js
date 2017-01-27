@@ -6,7 +6,9 @@ import './input-style';
 const Input = (props) => {
   return (
     <div className='input-container'>
-      <NewJokeButton getNewJokes={props.getNewJokes} />
+      <Link to='/jokes'>
+        <NewJokeButton getNewJokes={props.getNewJokes} />
+      </Link>
       <input type="number"
              className='number-input'
              value={props.jokeNum}

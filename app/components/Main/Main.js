@@ -23,7 +23,7 @@ export default class Main extends Component {
   render() {
     return(
       <div>
-        <Header />
+        <Header location={this.props.location} />
         <p className='main-joke'>{this.state.mainJoke}</p>
         {this.props.children}
       </div>

@@ -11,6 +11,7 @@ const router = (
   <Router history={browserHistory}>
     <Route path='/' component={Main}>
       <IndexRoute component={Jokes} />
+      <Route path='/jokes' component={Jokes} />
       <Route path='/settings' component={Settings} />
       <Route path='/favorites' component={Favorites}/>
     </Route>
