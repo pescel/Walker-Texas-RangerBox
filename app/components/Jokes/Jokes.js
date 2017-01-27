@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-dom';
-import './jokes-style';
 import Input from '../Input/Input';
 import JokeCards from './JokeCards';
 
@@ -10,7 +9,7 @@ export default class Jokes extends Component {
     this.state = {
       jokes: [],
       jokeNum: 0,
-      favorites: [],
+      favorites: []
     }
   }
 
@@ -26,9 +25,13 @@ export default class Jokes extends Component {
   }
 
   addFavorite(joke) {
-    this.state.favorites.push(joke)
+    console.log(this.state.favorites);
+    this.state.favorites.push(joke);
+    console.log(this.state.favorites);
+
     this.setState({ favorites: this.state.favorites })
   }
+
 
   render() {
     return(

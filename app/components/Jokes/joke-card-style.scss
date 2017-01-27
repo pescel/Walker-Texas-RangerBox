@@ -6,11 +6,13 @@
 
 .joke-card {
   height: 30%;
-  width: 30%;
+  width: 27%;
   position: relative;
   margin: 120px 20px 30px;
   padding: 5px;
-  flex-grow: 3;
+  flex-grow: 1;
+  max-width: 30%;
+  min-width: 20%;
   background-color: rgba(0,0,0,0.2);
 
 }

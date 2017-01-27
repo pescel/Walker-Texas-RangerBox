@@ -6,23 +6,24 @@
 
 #name-input {
   position: absolute;
-  top: 70%;
-  right: 44%;
+  top: 102%;
+  right: 48%;
   width: 15%;
   height: 30px;
+  font-size: 20px;
 }
 
 .set-name {
   position: absolute;
-  top: 67%;
-  right: 60%;
+  top: 98%;
+  right: 65%;
   font-size: 20px;
 }
 
 .set-name-button {
   position: absolute;
-  top: 71%;
-  right: 40%;
+  top: 103%;
+  right: 44%;
   height: 35px;
   border: none;
   border-radius: 3px;
@@ -30,8 +31,8 @@
 
 .reset-name-button {
   position: absolute;
-  top: 71%;
-  right: 35%;
+  top: 103%;
+  right: 39%;
   height: 35px;
   border: none;
   border-radius: 3px;
@@ -39,30 +40,30 @@
 
 .parent-controls {
   position: absolute;
-  top: 86%;
+  top: 116%;
   right: 54%;
 }
 
 .on {
   position: absolute;
-  top: 86%;
+  top: 116%;
   right: 51%;
 }
 
 .off {
   position: absolute;
-  top: 86%;
+  top: 116%;
   right: 46%;
 }
 
 .on-radio {
   position: absolute;
-  top: 89%;
+  top: 121%;
   right: 49%;
 }
 
 .off-radio {
   position: absolute;
-  top: 89%;
+  top: 121%;
   right: 44%;
 }

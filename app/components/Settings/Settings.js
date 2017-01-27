@@ -33,12 +33,14 @@ export default class Settings extends Component {
           <input className='on-radio'
                 type='radio'
                 name='control'
-                value='on'/>
+                value='on'
+                onClick={() => this.props.pControlsOn}/>
           <p className='off'>Off: </p>
           <input className='off-radio'
                  type='radio'
                  name='control'
-                 value='off'/>
+                 value='off'
+                 onClick={() => this.props.pControlsOff}/>
         </div>
       </div>
     )

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header';
+import Input from '../Input/Input';
 import './main-style';
 
 export default class Main extends Component {
@@ -7,7 +8,8 @@ export default class Main extends Component {
     super(props);
     this.state = {
       mainJoke: '',
-      name: ''
+      name: '',
+      parentControls: ''
     }
   }
 
@@ -16,7 +18,7 @@ export default class Main extends Component {
   }
 
   setRandomJoke() {
-    const randomJokeAPI = 'http://api.icndb.com/jokes/random/?escape=javascript'
+    const randomJokeAPI = `http://api.icndb.com/jokes/random/?escape=javascript${this.state.parentControls}`
 
     fetch(randomJokeAPI).then((response)=>{
       return response.json()
@@ -33,6 +35,27 @@ export default class Main extends Component {
     this.setState({ name: name })
     this.setRandomJoke()
   }
+
+
+  pControlsOn() {
+    this.setState({
+      parentControls: 'limitTo=[explicit]'
+    })
+  }
+
+  pControlsOff() {
+    this.setState({
+      parentControls: ''
+    })
+  }
+
+  loadFavorites() {
+    return this.state.favorites.map((fave, i) => {
+      return  (
+        <div key={i}>{fave}</div>
+        )
+      })
+    }
 
   render() {
     return(

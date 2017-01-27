@@ -16,7 +16,8 @@ const Input = (props) => {
       </input>
       <div className='fave-button-container'>
         <Link to='/favorites'>
-          <button className="fave-page-button">Favorites</button>
+          <button className="fave-page-button"
+                  onClick={props.loadFavorites}>Favorites</button>
           </Link>
       </div>
     </div>
