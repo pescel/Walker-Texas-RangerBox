@@ -3,10 +3,5 @@ import JokeCards from '../Jokes/JokeCards';
 
 
 const Favorites = (props) => {
-  return (
-    <div>
-      <JokeCards jokes={this.props.favorites} />
-    </div>
-
-  )
+  let noFaves = (<p> You don't have any favorites yet! </p>);
 }

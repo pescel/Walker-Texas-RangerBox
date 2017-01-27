@@ -1,0 +1,16 @@
+.new-joke-container {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.joke-card {
+  height: 30%;
+  width: 30%;
+  position: relative;
+  margin: 120px 20px 30px;
+  padding: 5px;
+  flex-grow: 3;
+  background-color: rgba(0,0,0,0.2);
+
+}

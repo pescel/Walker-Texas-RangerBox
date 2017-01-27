@@ -14,11 +14,19 @@ const Input = (props) => {
              value={props.jokeNum}
              onChange={(e) => props.handleChange(e)}>
       </input>
-      <Link to='/favorites'>
-        <button className="fave-page-button">Favorites</button>
-      </Link>
+      <div className='fave-button-container'>
+        <Link to='/favorites'>
+          <button className="fave-page-button">Favorites</button>
+          </Link>
+      </div>
     </div>
   )
+}
+
+Input.propTypes = {
+  className: React.PropTypes.string,
+  jokeNum: React.PropTypes.number,
+  handleChange: React.PropTypes.func
 }
 
 export default Input;

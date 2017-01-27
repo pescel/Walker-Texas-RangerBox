@@ -1,0 +1,68 @@
+.name-input-container {
+  height: 151px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.2);
+}
+
+#name-input {
+  position: absolute;
+  top: 70%;
+  right: 44%;
+  width: 15%;
+  height: 30px;
+}
+
+.set-name {
+  position: absolute;
+  top: 67%;
+  right: 60%;
+  font-size: 20px;
+}
+
+.set-name-button {
+  position: absolute;
+  top: 71%;
+  right: 40%;
+  height: 35px;
+  border: none;
+  border-radius: 3px;
+}
+
+.reset-name-button {
+  position: absolute;
+  top: 71%;
+  right: 35%;
+  height: 35px;
+  border: none;
+  border-radius: 3px;
+}
+
+.parent-controls {
+  position: absolute;
+  top: 86%;
+  right: 54%;
+}
+
+.on {
+  position: absolute;
+  top: 86%;
+  right: 51%;
+}
+
+.off {
+  position: absolute;
+  top: 86%;
+  right: 46%;
+}
+
+.on-radio {
+  position: absolute;
+  top: 89%;
+  right: 49%;
+}
+
+.off-radio {
+  position: absolute;
+  top: 89%;
+  right: 44%;
+}

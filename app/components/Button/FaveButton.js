@@ -1,11 +1,17 @@
 import React from 'react';
+import './button-style';
 
 const FavoritesBtn = (props) => {
   return (
-    <button className='faves-button'
+    <button className={props.className}
             onClick={() => props.addFavorite(props.joke)}
-    >⭐️</button>
+    >★</button>
   );
+}
+
+FavoritesBtn.propType = {
+  className: React.PropTypes.string,
+  addFavorites: React.PropTypes.func
 }
 
 export default FavoritesBtn;

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Router, Route, Link, IndexRoute, hashHistory, browserHistory, IndexRedirect} from 'react-router';
+import './button-style';
 
 const NewJokeButton = (props) => {
   return (

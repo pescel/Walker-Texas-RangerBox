@@ -1,0 +1,17 @@
+.fave-button-container {
+  margin-bottom: 50px;
+}
+
+.faves-button {
+  background-color: rgba(0,0,0,0);
+  font-size: 20px;
+  border: none;
+  color: white;
+  &:hover {
+    color: rgb(245, 236, 106);
+  }
+}
+
+.fave {
+  color: rgb(245, 236, 106);
+}

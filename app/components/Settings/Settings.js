@@ -13,8 +13,8 @@ export default class Settings extends Component {
   render() {
     return (
       <div className='settings-container'>
-        <div className='set-name'>
-          <p>Set Name: </p>
+        <div className='name-input-container'>
+          <p className='set-name'>Set Name: </p>
           <input id='name-input'
                  value={this.state.name}
                  handleChange={(e) => {this.setState({ name: e.target.value })}}
@@ -23,13 +23,24 @@ export default class Settings extends Component {
           <button className='reset-name-button'>RESET </button>
         </div>
         <div className='parental-control-container'>
-          <p>Parental Control: </p>
-          <p>On: </p>
-          <input type='radio' name='control' value='on'/>
-          <p>Off: </p>
-          <input type='radio' name='control' value='off'/>
+          <p className='parent-controls'>Parental Control: </p>
+          <p className='on'>On: </p>
+          <input className='on-radio'
+                type='radio'
+                name='control'
+                value='on'/>
+          <p className='off'>Off: </p>
+          <input className='off-radio'
+                 type='radio'
+                 name='control'
+                 value='off'/>
         </div>
       </div>
     )
   }
+}
+
+Settings.propTypes = {
+  name:  React.PropTypes.string
+
 }

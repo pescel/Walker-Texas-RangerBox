@@ -3,7 +3,6 @@ import { Link } from 'react-router';
 import './header-style';
 
 const Header = (props) => {
-  console.log(props);
   let path = ""
   let btn = ""
   if (props.location.pathname === '/settings') {

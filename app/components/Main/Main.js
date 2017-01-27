@@ -30,3 +30,7 @@ export default class Main extends Component {
     )
   }
 }
+
+Main.propTypes = {
+  mainJoke: React.PropTypes.string
+}
