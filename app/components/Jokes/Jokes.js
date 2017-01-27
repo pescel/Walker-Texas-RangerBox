@@ -9,7 +9,8 @@ export default class Jokes extends Component {
     super(props);
     this.state = {
       jokes: [],
-      jokeNum: 0
+      jokeNum: 0,
+      favorites: [],
     }
   }
 
@@ -30,13 +31,20 @@ export default class Jokes extends Component {
     this.setState({ jokeNum: e.target.value })
   }
 
+  addFavorite(joke) {
+    this.state.favorites.push(joke)
+    this.setState({ favorites: this.state.favorites })
+  }
+
   render() {
     return(
       <div>
         <Input handleChange={this.handleChange.bind(this)}
                getNewJokes={this.getNewJokes.bind(this)}
         />
-        <JokeCards jokes={this.state.jokes} />
+        <JokeCards jokes={this.state.jokes}
+                   addFavorite={this.addFavorite.bind(this)}
+        />
       </div>
 
     )

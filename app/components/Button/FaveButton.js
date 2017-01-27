@@ -1,12 +1,10 @@
 import React from 'react';
 
-const handleFaves = () => {
-  console.log("fave alligator");
-}
-
 const FavoritesBtn = (props) => {
   return (
-    <button className='faves-button' onClick={() => handleFaves() }>Favorites</button>
+    <button className='faves-button'
+            onClick={() => props.addFavorite(props.joke)}
+    >⭐️</button>
   );
 }
 

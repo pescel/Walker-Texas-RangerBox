@@ -4,7 +4,9 @@ import {Router, Route, Link, IndexRoute, hashHistory, browserHistory, IndexRedir
 const NewJokeButton = (props) => {
   return (
     <button className="joke-button"
-            onClick={() => props.getNewJokes()}></button>
+            onClick={() => props.getNewJokes()}>
+            New Joke
+            </button>
   )
 }
 
